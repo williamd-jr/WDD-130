@@ -1,3 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Roboto:wght@400&display=swap');
+
+/* General reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Apply body font (Roboto) */
+body {
+  font-family: 'Roboto', Arial, sans-serif; /* Fallback to Arial and sans-serif */
+}
+
+/* Apply headline font (Merriweather) */
+h1, h2, h3, h4, h5, h6, .home-title, .msg h2 {
+  font-family: 'Merriweather', Georgia, serif; /* Fallback to Georgia and serif */
+}
+
 #content {
     max-width: 1600px;
     margin: 0 auto;
@@ -7,6 +26,7 @@ nav a {
     text-align: center;
     color: #ffffff;
     text-decoration: none;
+    padding: 35px;
 }
 
 #hero-msg h1, #hero-msg h4, .button-box, main section {
@@ -20,7 +40,11 @@ nav a {
 
 body {
     background-color: #fcfbfb; 
+    margin: 0;
+    padding: 0;
+    font-size: 22px;
 }
+
 header {
     background-color:rgba(45, 84, 96, 0.7);
 }
@@ -34,6 +58,10 @@ nav a:hover {
     background-color: rgb(25, 45, 52);
     color: #fff;
     text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
 
 .book:hover, .join:hover {
@@ -43,15 +71,21 @@ nav a:hover {
 
 .msg {
     background-color: rgba(45, 84, 96, 0.7);
+    line-height: 1.5em;
+    padding: 35px;
 }
 
 footer {
     background-color: rgba(23, 71, 86, 0.824);
-    color: #fff
+    color: #fff;
+    padding: 25px 50px;
+    margin-top: 200px;
 }
 
 .home-title {
     color: #333; 
+    font-size: 2em;
+    margin-top: 10px;
 }
 
 h4 {
@@ -64,6 +98,8 @@ h4 {
 
 .msg p {
     color: #ffffff;
+    font-size: .8em;
+    padding-bottom: 15px;
 }
 
 footer a {
@@ -81,6 +117,7 @@ footer a:hover {
 
 .icon {
     width: 80px; 
+    padding-top: 10px;
 }
 
 #hero-img {
@@ -94,3 +131,28 @@ footer p {
 footer p a:hover {
     text-decoration: underline;
 }    
+
+h2 {
+    margin: 0;
+}
+
+#logo_link {
+    padding-top: 5px;
+}
+
+footer .social img {
+    padding-top: 15px;
+}
+
+.rivers-card, .camping-card, .rapids-card {
+    margin: 200px 0; 
+}
+
+.card-img {
+    border: 10px solid #d9c2a3;
+}
+
+main section img {
+    box-sizing: border-box;
+}
+            
