@@ -286,7 +286,7 @@ main.home-grid {
 }
 
 .wireframe {
-    display: auto;
+    display: grid;
     width: 100%;
 }
             
