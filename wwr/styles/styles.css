@@ -280,4 +280,13 @@ main.home-grid {
         margin-top: 25px;
     }
 }
+
+#wireframe-card {
+    width: 1px;
+}
+
+.wireframe {
+    display: auto;
+    width: 1000px;
+}
             
