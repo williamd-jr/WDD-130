@@ -289,4 +289,41 @@ main.home-grid {
     display: grid;
     width: 100%;
 }
-            
+        
+/* Rivers Page Styles */
+
+.rivers-page {
+    padding: 2rem;
+    background-color: #f4f4f4;
+}
+
+.river-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-between;
+}
+
+.river {
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 1rem;
+    width: 300px;
+    text-align: center;
+}
+
+.river img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.river h2 {
+    margin-top: 1rem;
+    color: #2a6d9e;
+}
+
+.river p {
+    font-size: 0.9rem;
+    color: #555;
+}
