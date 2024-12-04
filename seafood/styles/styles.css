@@ -143,19 +143,6 @@ footer {
     text-align: center;
 }
 
-.footer-links a,
-.social-links a {
-    color: white;
-    text-decoration: none;
-    margin: 10px;
-    font-size: 1rem;
-}
-
-.social-links img {
-    width: 30px;
-    margin: 0 10px;
-}
-
 @media screen and (max-width: 768px) {
     header {
         flex-direction: column;
@@ -385,11 +372,6 @@ html {
     transition: color 0.3s;
 }
 
-.footer-links a:hover,
-.social-links a:hover {
-    color: #00a1a1;
-}
-
 .social-links img {
     width: 25px;
     margin: 0 10px;
@@ -399,19 +381,4 @@ hr {
     margin: 20px 0;
     border: 0;
     border-top: 1px solid #ddd;
-}
-
-.footer-bottom {
-    text-align: center;
-}
-
-.footer-bottom a {
-    color: #006f6d;
-    text-decoration: none;
-    margin: 0 10px;
-    font-size: 1rem;
-}
-
-.footer-bottom a:hover {
-    color: #00a1a1;
 }
