@@ -363,3 +363,55 @@ footer {
 html {
     scroll-behavior: smooth;
 }
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.footer-logo-img {
+    max-width: 100px;
+    margin-left: 50px;
+}
+
+.footer-links a,
+.social-links a {
+    color: #006f6d;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover,
+.social-links a:hover {
+    color: #00a1a1;
+}
+
+.social-links img {
+    width: 25px;
+    margin: 0 10px;
+}
+
+hr {
+    margin: 20px 0;
+    border: 0;
+    border-top: 1px solid #ddd;
+}
+
+.footer-bottom {
+    text-align: center;
+}
+
+.footer-bottom a {
+    color: #006f6d;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1rem;
+}
+
+.footer-bottom a:hover {
+    color: #00a1a1;
+}
