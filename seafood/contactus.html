@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Easy Seafood Recipes | FAQ</title>
+    <title>Easy Seafood Recipes | Contact Us</title>
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
@@ -21,22 +21,35 @@
         </nav>
     </header>
 
-    <section class="faq-section">
-        <h2>Frequently Asked Questions</h2>
-        <div class="faq-item">
-            <h3>How do I make seafood less fishy?</h3>
-            <p>To reduce the fishy taste, soak seafood in milk for about 30 minutes before cooking, or use citrus like lemon to mask the odor.</p>
+    <section id="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Contact Us</h1>
+            <p class="hero-subtitle">We’d love to hear from you! Fill out the form below to get in touch with us.</p>
         </div>
-        <div class="faq-item">
-            <h3>What are the best seafood choices for beginners?</h3>
-            <p>Some great beginner-friendly seafood options include shrimp, tilapia, and salmon. These are easy to cook and flavorful.</p>
-        </div>
-        <div class="faq-item">
-            <h3>Can I substitute frozen seafood for fresh seafood?</h3>
-            <p>Yes, frozen seafood can be substituted for fresh. Just make sure to properly thaw it before cooking.</p>
-        </div>
-        <!-- Add more FAQ items as needed -->
     </section>
+
+    <main class="contact-page">
+        <h2>Get in Touch</h2>
+        <p>If you have any questions, comments, or feedback about our seafood recipes, please feel free to reach out. We're here to help!</p>
+
+        <form action="/my-handling-form-page" method="post">
+            <p>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="user_name" required />
+            </p>
+            <p>
+                <label for="mail">Email:</label>
+                <input type="email" id="mail" name="user_email" required />
+            </p>
+            <p>
+                <label for="msg">Message:</label>
+                <textarea id="msg" name="user_message" required></textarea>
+            </p>
+            <p class="button">
+                <button type="submit">Send your message</button>
+            </p>
+        </form>
+    </main>
 
     <footer>
         <div class="footer-content">
@@ -62,5 +75,3 @@
     </footer>
 </body>
 </html>
-
-
