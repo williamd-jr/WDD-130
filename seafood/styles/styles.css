@@ -23,16 +23,17 @@ header {
     align-items: center;
     padding: 20px 40px;
     background-color: #006f6d;
-    position: fixed; 
-    top: 0; 
-    left: 0; 
-    width: 100%; 
-    z-index: 1000; 
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .logo-container .logo {
     max-width: 150px;
+    border-radius: 2px;
 }
 
 nav {
@@ -49,50 +50,8 @@ nav a {
     transition: background-color 0.3s;
 }
 
-nav a:hover {
+nav a:hover, nav a:focus {
     background-color: #00a1a1;
-}
-
-/* Hero Section */
-#hero {
-    display: flex;
-    justify-content: space-between;
-    padding: 60px 40px;
-    background-color: #006f6d;
-    color: white;
-}
-
-.hero-content {
-    max-width: 500px;
-}
-
-.hero-title {
-    font-size: 3rem;
-    margin-bottom: 10px;
-}
-
-.hero-subtitle {
-    font-size: 1.5rem;
-    margin-bottom: 20px;
-}
-
-.cta-btn {
-    background-color: #00a1a1;
-    color: white;
-    padding: 12px 25px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 1.2rem;
-    transition: background-color 0.3s;
-}
-
-.cta-btn:hover {
-    background-color: #004d40;
-}
-
-.hero-image img {
-    max-width: 100%;
-    border-radius: 10px;
 }
 
 /* Info Section */
@@ -111,6 +70,7 @@ nav a:hover {
 .info-section p {
     font-size: 1.2rem;
     margin-bottom: 20px;
+    line-height: 1.6; /* Adjusted line height */
 }
 
 .image-container {
@@ -120,7 +80,7 @@ nav a:hover {
 }
 
 .info-image {
-    width: 100%;
+    width: 300px;
     max-width: 600px;
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -166,6 +126,24 @@ footer {
 
     .cta-btn {
         font-size: 1rem;
+    }
+
+    .faq-item {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    .faq-item h3 {
+        font-size: 1.6rem;
+    }
+
+    .faq-item p {
+        font-size: 1rem;
+    }
+
+    .faq-section img {
+        width: 100%;
+        margin: 10px 0;
     }
 }
 
@@ -216,6 +194,7 @@ footer {
     height: auto;
     border-radius: 10px;
     margin-bottom: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .recipe-link {
@@ -233,36 +212,10 @@ footer {
 }
 
 /* FAQ Section */
-.faq-section {
-    padding: 40px 20px;
-    text-align: center;
-    background-color: #fff;
-}
-
 .faq-section h2 {
     font-size: 2.5rem;
     color: #006f6d;
     margin-bottom: 20px;
-}
-
-.faq-item {
-    background-color: #f9f9f9;
-    padding: 20px;
-    margin: 15px 0;
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
-
-.faq-item h3 {
-    font-size: 1.8rem;
-    color: #006f6d;
-    margin-bottom: 10px;
-}
-
-.faq-item p {
-    font-size: 1.1rem;
-    color: #555;
-    line-height: 1.6;
 }
 
 .faq-section img {
@@ -284,62 +237,147 @@ footer {
     display: inline-block;
 }
 
-/* Responsive for smaller screens */
-@media screen and (max-width: 768px) {
-    header {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    #hero {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .hero-title {
-        font-size: 2.5rem;
-    }
-
-    .cta-btn {
-        font-size: 1rem;
-    }
-
-    .faq-item {
-        margin: 10px;
-        padding: 15px;
-    }
-
-    .faq-item h3 {
-        font-size: 1.6rem;
-    }
-
-    .faq-item p {
-        font-size: 1rem;
-    }
-
-    .faq-section img {
-        width: 100%;
-        margin: 10px 0;
-    }
+.faq-item img.faq-image {
+    max-width: 150px;
+    margin-top: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-html {
-    scroll-behavior: smooth;
+/* Style for the FAQ section */
+.faq-section {
+    margin-top: 30px;
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #fff;
 }
 
-/* Footer Section */
+/* Banner image */
+.banner-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/* FAQ items */
+.faq-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.faq-item h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #006f6d;
+}
+
+.faq-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: left;
+    max-width: 800px;
+}
+
+.faq-item p {
+    max-width: 500px;
+    margin-right: 20px;
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+
+/* Hero Section */
+#hero {
+    display: flex;
+    flex-direction: row-reverse; /* Ensures the text is on the right and the image on the left */
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 40px;
+    background-color: #005f5f; /* Adjust the background color if necessary */
+    color: white;
+}
+
+.hero-content {
+    flex: 1;
+    padding: 20px;
+    text-align: left;
+    max-width: 500px;
+}
+
+.hero-content .hero-title {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.hero-content .hero-subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.cta-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff8c00;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    font-size: 1.2rem;
+}
+
+.cta-btn:hover {
+    background-color: #ff7000;
+}
+
+.hero-image {
+    flex: 1;
+    padding: 20px;
+    justify-content: center;
+}
+
+.hero-image img {
+    max-width: 50%; /* Sets the image width to 50% of its container */
+    height: auto;   /* Maintains the aspect ratio */
+    border-radius: 10px; /* Keeps the rounded corners */
+    display: block; /* Ensures proper alignment */
+    margin: 0 auto; /* Centers the image if needed */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer Styling */
 .footer-content {
     display: flex;
     justify-content: space-between;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 5px;
     align-items: center;
     margin-bottom: 20px;
 }
 
-.footer-logo-img {
-    max-width: 100px;
+.footer-logo img {
+    width: 100px;
     margin-left: 50px;
+    border-radius: 2px;
 }
 
+.social-links a img {
+    width: 30px;
+    margin: 0 10px;
+}
+
+/* Footer Links */
 .footer-links a,
 .social-links a {
     color: #006f6d;
@@ -349,22 +387,93 @@ html {
     transition: color 0.3s;
 }
 
-.social-links img {
-    width: 25px;
-    margin: 0 10px;
-}
-
 hr {
     margin: 20px 0;
     border: 0;
     border-top: 1px solid #ddd;
 }
-.hero-image img,
-.info-image,
-.recipe-image {
-    width: 100%;
-    height: auto;
+
+/* About Section */
+.about-section {
+    background-color: #e0f7fa;
+    padding: 40px;
+    text-align: center;
+}
+
+.about-section h2 {
+    font-size: 2rem;
+    color: #006f6d;
+    margin-bottom: 15px;
+}
+
+.about-section p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+/* Audience Section */
+.audience-section {
+    background-color: #e0f7fa;
+    padding: 40px;
+    text-align: center;
+}
+
+.audience-section h2 {
+    font-size: 2rem;
+    color: #006f6d;
+    margin-bottom: 15px;
+}
+
+.audience-section p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+/* Why Us Section */
+.why-us-section {
+    background-color: #e0f7fa;
+    padding: 40px;
     border-radius: 10px;
+    text-align: center;
+    margin: 20px auto;
+    max-width: 800px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
+
+.why-us-section h2 {
+    font-size: 2rem;
+    color: #006f6d;
+    margin-bottom: 20px;
+}
+
+.why-us-section .reason {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    text-align: left;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.why-us-section .reason::before {
+    content: '✔';
+    color: #006f6d;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.why-us-section p {
+    font-size: 1.2rem;
+    margin-top: 20px;
+    color: #006f6d;
+    line-height: 1.6;
+}
+
+
+
+
+
+
+
+
 
